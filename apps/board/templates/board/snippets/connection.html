@@ -1,0 +1,15 @@
+<li class="list-group-item p-0">
+    <ul class="list-inline">
+        <li class="list-inline-item connection-block float-left">
+            <span class="connection-inicator">m</span>
+            <span>[[ connection.from.departure | minutesFromNow ]]</span>
+        </li>
+        <li class="list-inline-item">[[ connection.from.departure | isoTime ]]+[[ connection.from.delay ]]</li>
+        <li class="list-inline-item connection-block float-right">
+            <span class="connection-inicator">pl</span>
+            <span>[[ connection.from.platform || 'T' ]]</span>
+        </li>
+        <li class="list-inline-item icon connection-block float-right" v-if="is_train(connection)">{% include 'board/icons/train.html' %}</li>
+        <li class="list-inline-item icon connection-block float-right" v-else>{% include 'board/icons/tram.html' %}</li>
+    </ul>
+</li>

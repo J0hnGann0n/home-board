@@ -1,0 +1,20 @@
+{% extends 'board/master.html' %}
+{% block content %}
+    <div class="container board-container">
+        <div class="row">
+            <div class="col-xs-12 col-md-12">
+                {% include 'board/snippets/clock.html' %}
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-md-6">
+
+            </div>
+            <div class="col-xs-12 col-md-6">
+                <div class="card-group">
+                    {% include 'board/transport.html' %}
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

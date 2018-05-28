@@ -1,0 +1,51 @@
+.board-container {
+    max-width: 700px;
+}
+
+.connection {
+    font-family: 'Kameron', serif;
+}
+
+.connection-block {
+    position: relative;
+    width: 50px;
+    box-shadow: 8px 3px 7px -9px;
+}
+
+.connection-inicator {
+    position: absolute;
+    top: -15px;
+    right: 4px;
+    font-weight: 500;
+    font-size: 50%;
+}
+
+.connection .icon {
+    padding: 10px;
+}
+
+.connection .icon svg {
+    width: 45px;
+    line-height: 50px;
+}
+
+.connection-block:nth-of-type(2n - 1) {
+
+}
+
+.connection .list-group-item {
+    height: 45px;
+    line-height: 50px;
+    font-size: 125%;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.connection .list-group-item ul {
+    height: 100%;
+}
+
+.connection .list-inline-item {
+    height: 100%;
+    margin: 0;
+}
